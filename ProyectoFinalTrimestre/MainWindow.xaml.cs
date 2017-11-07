@@ -21,7 +21,7 @@ namespace ProyectoFinalTrimestre
     /// <summary>
     /// Lógica de interacción para MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+   /* public partial class MainWindow : Window
     {
         Personas personajes = new Personas();
         public MainWindow()
@@ -206,5 +206,5 @@ namespace ProyectoFinalTrimestre
                     "Peso: " + peso + '\n' +
                     "Altura: " + altura + '\n';
         }
-    }
+    }*/
 }

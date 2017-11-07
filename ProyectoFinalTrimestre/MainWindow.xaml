@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <ComboBox HorizontalAlignment="Left" Margin="160,203,0,0" VerticalAlignment="Top" Width="195">
+            <ComboBoxItem Content="Añadir Persona" IsSelected="True"/>
+            <ComboBoxItem Content="Mostrar Personas"/>
+            <ComboBoxItem Content="Mostrar la Persona por DNI"/>
+            <ComboBoxItem Content="Mostrar la Persona de menos peso"/>
+            <ComboBoxItem Content="Mostrar la Persona más alta"/>
+            <ComboBoxItem Content="Salir"/>
+        </ComboBox>
+
     </Grid>
 </Window>
