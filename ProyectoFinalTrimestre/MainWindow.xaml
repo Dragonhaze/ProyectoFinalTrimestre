@@ -16,6 +16,7 @@
             <ComboBoxItem Content="Salir"/>
         </ComboBox>
         <Label Content="Elige una opción" HorizontalAlignment="Left" Margin="210,80,0,0" VerticalAlignment="Top" Width="97"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="221,189,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Window>
