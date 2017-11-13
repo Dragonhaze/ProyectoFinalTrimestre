@@ -10,8 +10,8 @@
         <TextBox x:Name="Textbox1" HorizontalAlignment="Left" Height="23" Margin="168,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145"/>
         <TextBox x:Name="Textbox2" HorizontalAlignment="Left" Height="23" Margin="168,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145"/>
         <TextBox x:Name="Textbox3" HorizontalAlignment="Left" Height="23" Margin="168,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145"/>
-        <TextBox x:Name="Textbox5" HorizontalAlignment="Left" Height="23" Margin="168,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145"/>
-        <TextBox x:Name="Textbox6" HorizontalAlignment="Left" Height="23" Margin="168,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145"/>
+        <TextBox x:Name="Textbox5" HorizontalAlignment="Left" Height="23" Margin="168,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" PreviewTextInput="NumberValidationTextBox"/>
+        <TextBox x:Name="Textbox6" HorizontalAlignment="Left" Height="23" Margin="168,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" PreviewTextInput="NumberValidationTextBox"/>
 
         <Label Content="Nombre" HorizontalAlignment="Left" Margin="49,53,0,0" VerticalAlignment="Top" Width="119" Cursor="None"/>
         <Label Content="Apellidos" HorizontalAlignment="Left" Margin="49,81,0,0" VerticalAlignment="Top" Width="119"/>

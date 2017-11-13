@@ -31,11 +31,7 @@ namespace ProyectoFinalTrimestre
             InitializeComponent();
         }
 
-        private void NumberValidationTextBox(object sender, TextCompositionEventArgs e)
-        {
-            Regex regex = new Regex("[^0-9]+");
-            e.Handled = regex.IsMatch(e.Text);
-        }
+        
 
        
 
@@ -54,10 +50,17 @@ namespace ProyectoFinalTrimestre
                     break;
 
                 case 1:
-                    MessageBox.Show("Opcion2");
+
+                    for (int i = 0; i < Personas.GetPersonas().Count; i++)
+                    {
+
+                        texto.Text += Personas.buscarPersonaPorIndex(i);
+
+                    }
+
                     break;
                 case 2:
-                    MessageBox.Show("Opcion3");
+                    
                     break;
                 case 3:
                     MessageBox.Show("Opcion3");
@@ -87,26 +90,26 @@ namespace ProyectoFinalTrimestre
             for (int i = 0; i < Personas.GetPersonas().Count; i++)
             {
 
-                texto.Text += Personas.buscarPersona(i);
+                texto.Text += Personas.buscarPersonaPorIndex(i);
 
             }
         }
     }
     static class Personas
     {
-        private static ArrayList personas = new ArrayList();
+        private static List<Persona> personas = new List<Persona>();
 
-        public static ArrayList GetPersonas()
+        public static List<Persona> GetPersonas()
         {
             return personas;
         }
 
-        public static void SetPersonas(ArrayList value)
+        public static void SetPersonas(List<Persona> value)
         {
             personas = value;
         }
 
-        public static string buscarPersona(int i)
+        public static string buscarPersonaPorIndex(int i)
         {
             return personas[i].ToString();
         }

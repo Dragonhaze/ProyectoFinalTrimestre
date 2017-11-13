@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Página Principal" Height="402.074" Width="569.329">
     <Grid>
-        <ComboBox x:Name="Combobox1" HorizontalAlignment="Left" Margin="16,70,0,0" VerticalAlignment="Top" Width="230">
+        <ComboBox x:Name="Combobox1" HorizontalAlignment="Left" Margin="32,157,0,0" VerticalAlignment="Top" Width="230">
             <ComboBoxItem Content="Añadir Persona" IsSelected="True"/>
             <ComboBoxItem Content="Mostrar Personas"/>
             <ComboBoxItem Content="Mostrar la Persona por DNI"/>
@@ -15,9 +15,8 @@
             <ComboBoxItem Content="Mostrar la Persona más alta"/>
             <ComboBoxItem Content="Salir"/>
         </ComboBox>
-        <Label Content="Elige una opción" HorizontalAlignment="Left" Margin="82,14,0,0" VerticalAlignment="Top" Width="97"/>
-        <Button x:Name="Button1" Content="Seguir" HorizontalAlignment="Left" Margin="93,123,0,0" VerticalAlignment="Top" Width="75" Click="Button1_Click" />
-        <Button Content="Ver" HorizontalAlignment="Left" Height="29" Margin="103,176,0,0" VerticalAlignment="Top" Width="50" Click="Button_Click_1"/>
-        <TextBlock x:Name="texto" HorizontalAlignment="Left" Margin="332,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="355" Width="213"/>
+        <Label Content="Elige una opción" HorizontalAlignment="Left" Margin="98,101,0,0" VerticalAlignment="Top" Width="97"/>
+        <Button x:Name="Button1" Content="Seguir" HorizontalAlignment="Left" Margin="109,210,0,0" VerticalAlignment="Top" Width="75" Click="Button1_Click" />
+        <TextBlock x:Name="texto" HorizontalAlignment="Left" Margin="279,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="355" Width="266"/>
     </Grid>
 </Window>
