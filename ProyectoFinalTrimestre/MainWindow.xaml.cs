@@ -15,6 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Linq;
 
 namespace ProyectoFinalTrimestre
 {
@@ -60,7 +61,8 @@ namespace ProyectoFinalTrimestre
 
                     break;
                 case 2:
-                    
+                    Window2 window2 = new Window2();
+                    window2.ShowDialog();
                     break;
                 case 3:
                     MessageBox.Show("Opcion3");
@@ -107,6 +109,22 @@ namespace ProyectoFinalTrimestre
         public static void SetPersonas(List<Persona> value)
         {
             personas = value;
+        }
+
+        public static string buscarPersonaPorDNI(string dni)
+        {
+            for (int i = 0; i < Personas.GetPersonas().Count; i++)
+            {
+
+                if (personas[i].Dni == dni)
+                {
+
+                    return personas[i].ToString();
+                }
+               
+            }
+
+            return "No se ha encontrado una persona con ese DNI";
         }
 
         public static string buscarPersonaPorIndex(int i)

@@ -35,7 +35,11 @@ namespace ProyectoFinalTrimestre
         {
             String text = TextDNI.Text;
 
+            String resultado = Personas.buscarPersonaPorDNI(text);
 
+            MessageBox.Show(resultado);
+
+            this.Close();
         }
     }
 }
