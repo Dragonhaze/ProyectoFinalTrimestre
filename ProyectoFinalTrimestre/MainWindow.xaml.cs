@@ -24,12 +24,13 @@ namespace ProyectoFinalTrimestre
     public partial class MainWindow : Window
     {
         Persona p;
-        Personas personajes = new Personas();
+ 
         public MainWindow()
         {
 
             InitializeComponent();
         }
+
         private void NumberValidationTextBox(object sender, TextCompositionEventArgs e)
         {
             Regex regex = new Regex("[^0-9]+");
@@ -40,10 +41,36 @@ namespace ProyectoFinalTrimestre
 
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
-            Window1 window = new Window1();
-            window.DataContext = this;
+            int opcion = Combobox1.SelectedIndex;
 
-            window.ShowDialog();
+
+
+            switch (opcion)
+            {
+                case 0:
+                    Window1 window = new Window1();
+
+                    window.ShowDialog();
+                    break;
+
+                case 1:
+                    MessageBox.Show("Opcion2");
+                    break;
+                case 2:
+                    MessageBox.Show("Opcion3");
+                    break;
+                case 3:
+                    MessageBox.Show("Opcion3");
+                    break;
+                case 4:
+                    MessageBox.Show("Opcion3");
+                    break;
+                case 5:
+                    MessageBox.Show("Opcion3");
+                    break;
+
+            }
+            
 
 
             /* for (int i = 0; i < personajes.GetPersonas().Count; i++)
@@ -53,33 +80,38 @@ namespace ProyectoFinalTrimestre
 
              }*/
         }
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+
+            for (int i = 0; i < Personas.GetPersonas().Count; i++)
+            {
+
+                texto.Text += Personas.buscarPersona(i);
+
+            }
+        }
     }
-    class Personas
+    static class Personas
     {
-        private ArrayList personas;
+        private static ArrayList personas = new ArrayList();
 
-
-
-
-
-        public Personas() => this.SetPersonas(new ArrayList());
-
-        public ArrayList GetPersonas()
+        public static ArrayList GetPersonas()
         {
             return personas;
         }
 
-        public void SetPersonas(ArrayList value)
+        public static void SetPersonas(ArrayList value)
         {
             personas = value;
         }
 
-        public string buscarPersona(int i)
+        public static string buscarPersona(int i)
         {
             return personas[i].ToString();
         }
 
-        public void addPersona(Persona persona)
+        public static void addPersona(Persona persona)
         {
             if (persona != null)
             {

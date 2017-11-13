@@ -19,7 +19,6 @@ namespace ProyectoFinalTrimestre
     /// </summary>
     public partial class Window1 : Window
     {
-        Personas personajes = new Personas();
 
         public Window1()
         {
@@ -62,13 +61,13 @@ namespace ProyectoFinalTrimestre
                 
 
                 Persona persona = new Persona( nombre, apellidos, dni, fechanac, peso, altura);
+                MessageBox.Show("Has metido a " + persona.Nombre + " en el array.");
 
-               
-                personajes.addPersona(persona);
+                Personas.addPersona(persona);
 
                 
 
-                MessageBox.Show("Has metido a " + persona.Nombre + " en el array.");
+                
 
                 this.Close();
         }
