@@ -5,12 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoFinalTrimestre"
         mc:Ignorable="d"
-        Title="Página Principal" Height="326.308" Width="525">
+        Title="Página Principal" Height="205.392" Width="268.261">
     <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="a23caeb.png" Stretch="UniformToFill"/>
-        </Grid.Background>
-        <ComboBox x:Name="Combobox1" HorizontalAlignment="Left" Margin="144,136,0,0" VerticalAlignment="Top" Width="230">
+        <ComboBox x:Name="Combobox1" HorizontalAlignment="Left" Margin="16,70,0,0" VerticalAlignment="Top" Width="230">
             <ComboBoxItem Content="Añadir Persona" IsSelected="True"/>
             <ComboBoxItem Content="Mostrar Personas"/>
             <ComboBoxItem Content="Mostrar la Persona por DNI"/>
@@ -18,8 +15,8 @@
             <ComboBoxItem Content="Mostrar la Persona más alta"/>
             <ComboBoxItem Content="Salir"/>
         </ComboBox>
-        <Label Content="Elige una opción" HorizontalAlignment="Left" Margin="210,80,0,0" VerticalAlignment="Top" Width="97"/>
-        <Button x:Name="Button1" Content="Seguir" HorizontalAlignment="Left" Margin="221,189,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="Elige una opción" HorizontalAlignment="Left" Margin="82,14,0,0" VerticalAlignment="Top" Width="97"/>
+        <Button x:Name="Button1" Content="Seguir" HorizontalAlignment="Left" Margin="93,123,0,0" VerticalAlignment="Top" Width="75" Click="Button1_Click" />
 
     </Grid>
 </Window>

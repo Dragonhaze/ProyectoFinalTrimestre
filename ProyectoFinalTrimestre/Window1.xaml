@@ -5,17 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoFinalTrimestre"
         mc:Ignorable="d"
-        Title="Introducir persona" Height="300" Width="351.777">
+        Title="Introducir persona" Height="311.421" Width="351.777">
     <Grid>
-        <Grid.Background>
-            <ImageBrush/>
-        </Grid.Background>
-        <TextBox x:Name="Textbox1" HorizontalAlignment="Left" Height="23" Margin="168,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="Textbox2" HorizontalAlignment="Left" Height="23" Margin="168,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="Textbox3" HorizontalAlignment="Left" Height="23" Margin="168,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="Textbox4" HorizontalAlignment="Left" Height="23" Margin="168,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="Textbox5" HorizontalAlignment="Left" Height="23" Margin="168,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="Textbox6" HorizontalAlignment="Left" Height="23" Margin="168,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Textbox1" HorizontalAlignment="Left" Height="23" Margin="168,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145"/>
+        <TextBox x:Name="Textbox2" HorizontalAlignment="Left" Height="23" Margin="168,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145"/>
+        <TextBox x:Name="Textbox3" HorizontalAlignment="Left" Height="23" Margin="168,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145"/>
+        <TextBox x:Name="Textbox5" HorizontalAlignment="Left" Height="23" Margin="168,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145"/>
+        <TextBox x:Name="Textbox6" HorizontalAlignment="Left" Height="23" Margin="168,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145"/>
 
         <Label Content="Nombre" HorizontalAlignment="Left" Margin="49,53,0,0" VerticalAlignment="Top" Width="119" Cursor="None"/>
         <Label Content="Apellidos" HorizontalAlignment="Left" Margin="49,81,0,0" VerticalAlignment="Top" Width="119"/>
@@ -25,7 +21,8 @@
         <Label Content="Altura" HorizontalAlignment="Left" Margin="49,193,0,0" VerticalAlignment="Top" Width="119"/>
         <Label Content="Introduzca los datos de la persona que quiera añadir" HorizontalAlignment="Left" Margin="29,10,0,0" VerticalAlignment="Top"/>
 
-        <Button x:Name="SubmitButton" Content="Submit" HorizontalAlignment="Left" Margin="126,239,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.057,-0.006"/>
+        <Button x:Name="SubmitButton" Content="Submit" HorizontalAlignment="Left" Margin="126,239,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.057,-0.006" Click="SubmitButton_Click"/>
+        <DatePicker x:Name="date" HorizontalAlignment="Left" Margin="168,140,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

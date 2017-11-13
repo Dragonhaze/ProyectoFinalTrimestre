@@ -19,9 +19,58 @@ namespace ProyectoFinalTrimestre
     /// </summary>
     public partial class Window1 : Window
     {
+        Personas personajes = new Personas();
+
         public Window1()
         {
             InitializeComponent();
+        }
+
+        private void SubmitButton_Click(object sender, RoutedEventArgs e)
+        {
+        
+                string nombre, apellidos, dni, fechanac;
+               
+                int peso = 0, altura = 0;
+
+                nombre = Textbox1.Text;
+                apellidos = Textbox2.Text;
+                dni = Textbox3.Text;
+
+                /*if (radio1.IsChecked == true)
+                {
+                    sexo = 'H';
+                }
+                else if (radio2.IsChecked == true)
+                {
+                    sexo = 'F';
+                }
+                else
+                {
+                    sexo = 'U';
+                }*/
+
+                fechanac = date.Text;
+                if (!String.IsNullOrEmpty(Textbox5.Text))
+                {
+                    peso = Convert.ToInt32(Textbox5.Text);
+                }
+                if (!String.IsNullOrEmpty(Textbox6.Text))
+                {
+                    altura = Convert.ToInt32(Textbox6.Text);
+                }
+                
+
+                Persona persona = new Persona( nombre, apellidos, dni, fechanac, peso, altura);
+
+               
+                personajes.addPersona(persona);
+
+                
+
+                MessageBox.Show("Has metido a " + persona.Nombre + " en el array.");
+
+                this.Close();
         }
     }
 }
