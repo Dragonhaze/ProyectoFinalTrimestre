@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="Introducir persona" Height="311.421" Width="351.777">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Icons/a23caeb.png" Stretch="None"/>
+        </Grid.Background>
         <TextBox x:Name="Textbox1" HorizontalAlignment="Left" Height="23" Margin="168,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145"/>
         <TextBox x:Name="Textbox2" HorizontalAlignment="Left" Height="23" Margin="168,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145"/>
         <TextBox x:Name="Textbox3" HorizontalAlignment="Left" Height="23" Margin="168,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145"/>

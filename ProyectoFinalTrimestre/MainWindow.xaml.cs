@@ -52,6 +52,7 @@ namespace ProyectoFinalTrimestre
 
                 case 1:
 
+                    texto.Text = String.Empty;
                     for (int i = 0; i < Personas.GetPersonas().Count; i++)
                     {
 
@@ -65,13 +66,13 @@ namespace ProyectoFinalTrimestre
                     window2.ShowDialog();
                     break;
                 case 3:
-                    MessageBox.Show("Opcion3");
+                    MessageBox.Show(Personas.buscarPersonadeMenosPeso());
                     break;
                 case 4:
-                    MessageBox.Show("Opcion3");
+                    MessageBox.Show(Personas.buscarPersonadeMasAltura());
                     break;
                 case 5:
-                    MessageBox.Show("Opcion3");
+                    this.Close();
                     break;
 
             }
@@ -125,6 +126,34 @@ namespace ProyectoFinalTrimestre
             }
 
             return "No se ha encontrado una persona con ese DNI";
+        }
+
+        public static string buscarPersonadeMenosPeso()
+        {
+            Persona max = new Persona("","","","",1000000,0);
+            for (int i = 0; i < Personas.GetPersonas().Count; i++)
+            {
+                if (personas[i].Peso < max.Peso)
+                {
+                    max = personas[i];
+                }
+            }
+
+            return max.ToString();
+        }
+
+        public static string buscarPersonadeMasAltura()
+        {
+            Persona max = new Persona("", "", "", "", 0, 0);
+            for (int i = 0; i < Personas.GetPersonas().Count; i++)
+            {
+                if (personas[i].Altura > max.Altura)
+                {
+                    max = personas[i];
+                }
+            }
+
+            return max.ToString();
         }
 
         public static string buscarPersonaPorIndex(int i)

@@ -35,48 +35,55 @@ namespace ProyectoFinalTrimestre
         private void SubmitButton_Click(object sender, RoutedEventArgs e)
         {
         
-                string nombre, apellidos, dni, fechanac;
+            string nombre, apellidos, dni, fechanac;
                
-                int peso = 0, altura = 0;
+            int peso = 0, altura = 0;
 
-                nombre = Textbox1.Text;
-                apellidos = Textbox2.Text;
-                dni = Textbox3.Text;
+            nombre = Textbox1.Text;
+            apellidos = Textbox2.Text;
+            dni = Textbox3.Text;
 
-                /*if (radio1.IsChecked == true)
-                {
-                    sexo = 'H';
-                }
-                else if (radio2.IsChecked == true)
-                {
-                    sexo = 'F';
-                }
-                else
-                {
-                    sexo = 'U';
-                }*/
-
-                fechanac = date.Text;
-                if (!String.IsNullOrEmpty(Textbox5.Text))
-                {
-                    peso = Convert.ToInt32(Textbox5.Text);
-                }
-                if (!String.IsNullOrEmpty(Textbox6.Text))
-                {
-                    altura = Convert.ToInt32(Textbox6.Text);
-                }
+            fechanac = date.Text;
+            if (!String.IsNullOrEmpty(Textbox5.Text))
+            {
+                peso = Convert.ToInt32(Textbox5.Text);
+            }
+            if (!String.IsNullOrEmpty(Textbox6.Text))
+            {
+                altura = Convert.ToInt32(Textbox6.Text);
+            }
                 
 
-                Persona persona = new Persona( nombre, apellidos, dni, fechanac, peso, altura);
-                MessageBox.Show("Has metido a " + persona.Nombre + " en el array.");
+            Persona persona = new Persona( nombre, apellidos, dni, fechanac, peso, altura);
 
+            int nope = 0;
+            for (int i = 0; i < Personas.GetPersonas().Count; i++)
+            {
+                if( Personas.GetPersonas()[i].Dni == persona.Dni)
+                {
+                    nope = 1;
+                    MessageBox.Show("Ya hay una persona con el mismo DNI");
+                    
+                }
+            }
+            if( nope == 0)
+            {
                 Personas.addPersona(persona);
-
-                
-
-                
-
                 this.Close();
+            }
+            else
+            {
+                Textbox1.Clear();
+                Textbox2.Clear();
+                Textbox3.Clear();
+                Textbox6.Clear();
+                Textbox5.Clear();
+                date.ClearValue(DatePicker.SelectedDateProperty);
+            }
+            
+
+            
+            
         }
     }
 }
