@@ -5,14 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoFinalTrimestre"
         mc:Ignorable="d"
-        Title="Buscar por DNI" Height="215.482" Width="300">
-    <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="Icons/a23caeb.png" Stretch="None"/>
-        </Grid.Background>
-        <Label Content="Introduce el DNI de la persona que quieras buscar" HorizontalAlignment="Left" Margin="9,34,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="TextDNI" HorizontalAlignment="Left" Height="23" Margin="88,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Buscar" HorizontalAlignment="Left" Margin="111,120,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        Title="Buscar por DNI" Height="215.482" Width="389.146">
+    <Grid Background="Black">
+        <Label Content="Introduce el DNI de la persona que quieras buscar" HorizontalAlignment="Left" Margin="9,34,-88,0" VerticalAlignment="Top" Foreground="White" FontFamily="Lucida Console" Width="371"/>
+        <TextBox x:Name="TextDNI" HorizontalAlignment="Left" Height="23" Margin="113,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" FontFamily="Lucida Console" Foreground="White" Background="Black" BorderBrush="#FF426642"/>
+        <Button Content="Buscar" HorizontalAlignment="Left" Margin="143,120,0,0" VerticalAlignment="Top" Width="98" Click="Button_Click" FontFamily="Lucida Console" BorderBrush="#FF416451" Foreground="White" Background="Black"/>
 
     </Grid>
 </Window>

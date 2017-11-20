@@ -5,12 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoFinalTrimestre"
         mc:Ignorable="d"
-        Title="Página Principal" Height="402.074" Width="569.329">
+        Title="Página Principal" Height="595.574" Width="881.329">
+    <Window.Resources>
+        <FontFamily x:Key="test" >/Fonts/#Pirulen</FontFamily>
+    </Window.Resources>
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="Icons/542CCF2C-11B4-4304-B39C-EFD493E31940.JPG"/>
+            <ImageBrush ImageSource="Icons/Twin_Snakes_(Codec_Screen).jpg"/>
         </Grid.Background>
-        <ComboBox x:Name="Combobox1" HorizontalAlignment="Left" Margin="32,157,0,0" VerticalAlignment="Top" Width="230">
+        <ComboBox x:Name="Combobox1" HorizontalAlignment="Left" Margin="97,381,0,0" VerticalAlignment="Top" Width="242" RenderTransformOrigin="0.541,0.091">
             <ComboBoxItem Content="Añadir Persona" IsSelected="True"/>
             <ComboBoxItem Content="Mostrar Personas"/>
             <ComboBoxItem Content="Buscar Persona por DNI"/>
@@ -18,12 +21,12 @@
             <ComboBoxItem Content="Mostrar la Persona más alta"/>
             <ComboBoxItem Content="Salir"/>
         </ComboBox>
-        <Label Content="Elige una opción" HorizontalAlignment="Left" Margin="98,101,0,0" VerticalAlignment="Top" Width="97"/>
-        <Button x:Name="Button1" Content="Seguir" HorizontalAlignment="Left" Margin="109,210,0,0" VerticalAlignment="Top" Width="75" Click="Button1_Click" />
+        <Label Content="Choose an option boss" HorizontalAlignment="Left" Margin="97,325,0,0" VerticalAlignment="Top" Width="242" Foreground="White" Height="28" FontFamily="Lucida Console" FontSize="18"/>
+        <Button x:Name="Button1" Content="Seguir" HorizontalAlignment="Left" Margin="396,503,0,0" VerticalAlignment="Top" Width="88" Click="Button1_Click" Background="Black" FontFamily="Lucida Console" Foreground="White" Height="22" BorderBrush="#FF598562" />
 
-        
-        <ScrollViewer HorizontalAlignment="Left" Height="351" Margin="279,10,0,0" VerticalAlignment="Top" Width="266">
-            <TextBlock x:Name="texto" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="auto" Width="256"/>
+
+        <ScrollViewer HorizontalAlignment="Left" Height="166" Margin="476,308,0,0" VerticalAlignment="Top" Width="328" HorizontalScrollBarVisibility="Auto" Foreground="White">
+            <TextBlock x:Name="texto" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="auto" Width="249" FontFamily="Lucida Console"/>
         </ScrollViewer>
     </Grid>
 </Window>

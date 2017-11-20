@@ -33,6 +33,7 @@ namespace ProyectoFinalTrimestre
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+
             String text = TextDNI.Text;
 
             String resultado = Personas.buscarPersonaPorDNI(text);

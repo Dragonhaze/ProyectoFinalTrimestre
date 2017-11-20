@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -62,17 +64,41 @@ namespace ProyectoFinalTrimestre
                 if( Personas.GetPersonas()[i].Dni == persona.Dni)
                 {
                     nope = 1;
+                    SoundPlayer My_JukeBox = new SoundPlayer(@"Sounds/nope.wav");
+                    try
+                    {
+                        My_JukeBox.Play();
+                    }
+                    catch (FileNotFoundException ex)
+                    {
+                        // Write error.
+                        Console.WriteLine(ex);
+                    }
                     MessageBox.Show("Ya hay una persona con el mismo DNI");
                     
                 }
             }
             if( nope == 0)
             {
+                SoundPlayer My_JukeBox2 = new SoundPlayer(@"Sounds/item.wav");
+                try
+                {
+                    My_JukeBox2.Play();
+                }
+                catch (FileNotFoundException ex)
+                {
+                    // Write error.
+                    Console.WriteLine(ex);
+                }
+
                 Personas.addPersona(persona);
+                Task.Delay(700).Wait();
                 this.Close();
             }
             else
             {
+                
+
                 Textbox1.Clear();
                 Textbox2.Clear();
                 Textbox3.Clear();

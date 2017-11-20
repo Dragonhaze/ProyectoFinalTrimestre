@@ -15,7 +15,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Linq;
+using System.Media;
+using System.IO;
 
 namespace ProyectoFinalTrimestre
 {
@@ -38,19 +39,42 @@ namespace ProyectoFinalTrimestre
 
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
+            
             int opcion = Combobox1.SelectedIndex;
 
-
+            
 
             switch (opcion)
             {
                 case 0:
+
+                    SoundPlayer My_JukeBox = new SoundPlayer(@"Sounds/call.wav");
+                    try
+                    {
+                        My_JukeBox.Play();
+                    }
+                    catch (FileNotFoundException ex)
+                    {
+                        // Write error.
+                        Console.WriteLine(ex);
+                    }
+
                     Window1 window = new Window1();
 
                     window.ShowDialog();
                     break;
 
                 case 1:
+
+                    SoundPlayer My_JukeBox2 = new SoundPlayer(@"Sounds/alerted.wav");
+                    try
+                    {
+                        My_JukeBox2.Play();
+                    }
+                    catch (FileNotFoundException ex)
+                    {
+                        Console.WriteLine(ex);
+                    }
 
                     texto.Text = String.Empty;
                     for (int i = 0; i < Personas.GetPersonas().Count; i++)
@@ -60,18 +84,59 @@ namespace ProyectoFinalTrimestre
 
                     }
 
+
+                    
+
                     break;
                 case 2:
+                    SoundPlayer My_JukeBox3 = new SoundPlayer(@"Sounds/itemselect.wav");
+                    try
+                    {
+                        My_JukeBox3.Play();
+                    }
+                    catch (FileNotFoundException ex)
+                    {
+                        // Write error.
+                        Console.WriteLine(ex);
+                    }
                     Window2 window2 = new Window2();
                     window2.ShowDialog();
                     break;
                 case 3:
+                    SoundPlayer My_JukeBox4 = new SoundPlayer(@"Sounds/item2.wav");
+                    try
+                    {
+                        My_JukeBox4.Play();
+                    }
+                    catch (FileNotFoundException ex)
+                    {
+                        Console.WriteLine(ex);
+                    }
                     MessageBox.Show(Personas.buscarPersonadeMenosPeso());
                     break;
                 case 4:
+                    SoundPlayer My_JukeBox5 = new SoundPlayer(@"Sounds/item2.wav");
+                    try
+                    {
+                        My_JukeBox5.Play();
+                    }
+                    catch (FileNotFoundException ex)
+                    {
+                        Console.WriteLine(ex);
+                    }
                     MessageBox.Show(Personas.buscarPersonadeMasAltura());
                     break;
                 case 5:
+                    SoundPlayer My_JukeBox6 = new SoundPlayer(@"Sounds/ded.wav");
+                    try
+                    {
+                        My_JukeBox6.Play();
+                    }
+                    catch (FileNotFoundException ex)
+                    {
+                        Console.WriteLine(ex);
+                    }
+                    Task.Delay(3500).Wait();
                     this.Close();
                     break;
 
@@ -119,12 +184,30 @@ namespace ProyectoFinalTrimestre
 
                 if (personas[i].Dni == dni)
                 {
-
+                    SoundPlayer My_JukeBox = new SoundPlayer(@"Sounds/item.wav");
+                    try
+                    {
+                        My_JukeBox.Play();
+                    }
+                    catch (FileNotFoundException ex)
+                    {
+                        // Write error.
+                        Console.WriteLine(ex);
+                    }
                     return personas[i].ToString();
                 }
                
             }
-
+            SoundPlayer My_JukeBox2 = new SoundPlayer(@"Sounds/nope.wav");
+            try
+            {
+                My_JukeBox2.Play();
+            }
+            catch (FileNotFoundException ex)
+            {
+                // Write error.
+                Console.WriteLine(ex);
+            }
             return "No se ha encontrado una persona con ese DNI";
         }
 

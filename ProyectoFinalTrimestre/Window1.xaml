@@ -5,27 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoFinalTrimestre"
         mc:Ignorable="d"
-        Title="Introducir persona" Height="311.421" Width="351.777">
-    <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="Icons/a23caeb.png" Stretch="None"/>
-        </Grid.Background>
-        <TextBox x:Name="Textbox1" HorizontalAlignment="Left" Height="23" Margin="168,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145"/>
-        <TextBox x:Name="Textbox2" HorizontalAlignment="Left" Height="23" Margin="168,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145"/>
-        <TextBox x:Name="Textbox3" HorizontalAlignment="Left" Height="23" Margin="168,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145"/>
-        <TextBox x:Name="Textbox5" HorizontalAlignment="Left" Height="23" Margin="168,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" PreviewTextInput="NumberValidationTextBox"/>
-        <TextBox x:Name="Textbox6" HorizontalAlignment="Left" Height="23" Margin="168,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" PreviewTextInput="NumberValidationTextBox"/>
+        Title="Introducir persona" Height="311.421" Width="396.04">
+    <Grid Background="Black">
+        <TextBox x:Name="Textbox1" HorizontalAlignment="Left" Height="23" Margin="178,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" Background="Black" Foreground="White" BorderBrush="#FF5C8D60" FontFamily="Lucida Console"/>
+        <TextBox x:Name="Textbox2" HorizontalAlignment="Left" Height="23" Margin="178,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" Background="Black" Foreground="White" BorderBrush="#FF5C8D60" FontFamily="Lucida Console"/>
+        <TextBox x:Name="Textbox3" HorizontalAlignment="Left" Height="23" Margin="178,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" Background="Black" Foreground="White" BorderBrush="#FF5C8D60" FontFamily="Lucida Console"/>
+        <TextBox x:Name="Textbox5" HorizontalAlignment="Left" Height="23" Margin="178,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" PreviewTextInput="NumberValidationTextBox" Background="Black" Foreground="White" BorderBrush="#FF5C8D60" FontFamily="Lucida Console"/>
+        <TextBox x:Name="Textbox6" HorizontalAlignment="Left" Height="23" Margin="178,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" PreviewTextInput="NumberValidationTextBox" Background="Black" Foreground="White" BorderBrush="#FF5C8D60" FontFamily="Lucida Console"/>
 
-        <Label Content="Nombre" HorizontalAlignment="Left" Margin="49,53,0,0" VerticalAlignment="Top" Width="119" Cursor="None"/>
-        <Label Content="Apellidos" HorizontalAlignment="Left" Margin="49,81,0,0" VerticalAlignment="Top" Width="119"/>
-        <Label Content="DNI" HorizontalAlignment="Left" Margin="49,109,0,0" VerticalAlignment="Top" Width="119"/>
-        <Label Content="Fecha de nacimiento" HorizontalAlignment="Left" Margin="49,137,0,0" VerticalAlignment="Top" Width="119"/>
-        <Label Content="Peso" HorizontalAlignment="Left" Margin="49,165,0,0" VerticalAlignment="Top" Width="119"/>
-        <Label Content="Altura" HorizontalAlignment="Left" Margin="49,193,0,0" VerticalAlignment="Top" Width="119"/>
-        <Label Content="Introduzca los datos de la persona que quiera añadir" HorizontalAlignment="Left" Margin="29,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="29,54,0,0" VerticalAlignment="Top" Width="149" Cursor="None" Foreground="White" FontFamily="Lucida Console"/>
+        <Label Content="Apellidos" HorizontalAlignment="Left" Margin="29,82,0,0" VerticalAlignment="Top" Width="149" Foreground="White" FontFamily="Lucida Console"/>
+        <Label Content="DNI" HorizontalAlignment="Left" Margin="29,110,0,0" VerticalAlignment="Top" Width="149" Foreground="White" FontFamily="Lucida Console"/>
+        <Label Content="Fecha de nacimiento" HorizontalAlignment="Left" Margin="29,138,0,0" VerticalAlignment="Top" Width="149" Foreground="White" FontFamily="Lucida Console"/>
+        <Label Content="Peso" HorizontalAlignment="Left" Margin="29,166,0,0" VerticalAlignment="Top" Width="149" Foreground="White" FontFamily="Lucida Console"/>
+        <Label Content="Altura" HorizontalAlignment="Left" Margin="29,194,0,0" VerticalAlignment="Top" Width="149" Foreground="White" FontFamily="Lucida Console"/>
+        <Label Content="Introduzca los datos de la persona que quiera añadir" HorizontalAlignment="Left" Margin="0,10,-18,0" VerticalAlignment="Top" Foreground="White" FontFamily="Lucida Console" Width="385"/>
 
-        <Button x:Name="SubmitButton" Content="Submit" HorizontalAlignment="Left" Margin="126,239,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.057,-0.006" Click="SubmitButton_Click"/>
-        <DatePicker x:Name="date" HorizontalAlignment="Left" Margin="168,140,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="SubmitButton" Content="Submit" HorizontalAlignment="Left" Margin="157,240,0,0" VerticalAlignment="Top" Width="76" RenderTransformOrigin="0.057,-0.006" Click="SubmitButton_Click" Background="Black" Foreground="White" BorderBrush="#FF63815A" FontFamily="Lucida Console" Height="21"/>
+        <DatePicker x:Name="date" HorizontalAlignment="Left" Margin="178,141,0,0" VerticalAlignment="Top" FontFamily="Lucida Console"/>
 
     </Grid>
 </Window>
