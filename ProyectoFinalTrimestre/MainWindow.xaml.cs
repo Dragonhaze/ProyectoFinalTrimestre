@@ -127,7 +127,7 @@ namespace ProyectoFinalTrimestre
                     MessageBox.Show(Personas.buscarPersonadeMasAltura());
                     break;
                 case 5:
-                    SoundPlayer My_JukeBox6 = new SoundPlayer(@"Sounds/ded.wav");
+                    SoundPlayer My_JukeBox6 = new SoundPlayer(@"Sounds/dead.wav");
                     try
                     {
                         My_JukeBox6.Play();
@@ -136,7 +136,7 @@ namespace ProyectoFinalTrimestre
                     {
                         Console.WriteLine(ex);
                     }
-                    Task.Delay(3500).Wait();
+                    Task.Delay(7500).Wait();
                     this.Close();
                     break;
 

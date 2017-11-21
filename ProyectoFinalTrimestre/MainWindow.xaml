@@ -13,7 +13,13 @@
         <Grid.Background>
             <ImageBrush ImageSource="Icons/Twin_Snakes_(Codec_Screen).jpg"/>
         </Grid.Background>
-        <ComboBox x:Name="Combobox1" HorizontalAlignment="Left" Margin="97,381,0,0" VerticalAlignment="Top" Width="242" RenderTransformOrigin="0.541,0.091">
+        <ComboBox x:Name="Combobox1" HorizontalAlignment="Left" Margin="97,381,0,0" VerticalAlignment="Top" Width="290" RenderTransformOrigin="0.541,0.091" FontFamily="Lucida Console" Height="21" FontSize="14">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="Black" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
             <ComboBoxItem Content="Añadir Persona" IsSelected="True"/>
             <ComboBoxItem Content="Mostrar Personas"/>
             <ComboBoxItem Content="Buscar Persona por DNI"/>
@@ -21,7 +27,7 @@
             <ComboBoxItem Content="Mostrar la Persona más alta"/>
             <ComboBoxItem Content="Salir"/>
         </ComboBox>
-        <Label Content="Choose an option boss" HorizontalAlignment="Left" Margin="97,325,0,0" VerticalAlignment="Top" Width="242" Foreground="White" Height="28" FontFamily="Lucida Console" FontSize="18"/>
+        <Label Content="Choose an option Snake" HorizontalAlignment="Left" Margin="117,325,0,0" VerticalAlignment="Top" Width="254" Foreground="White" Height="28" FontFamily="Lucida Console" FontSize="18"/>
         <Button x:Name="Button1" Content="Seguir" HorizontalAlignment="Left" Margin="396,503,0,0" VerticalAlignment="Top" Width="88" Click="Button1_Click" Background="Black" FontFamily="Lucida Console" Foreground="White" Height="22" BorderBrush="#FF598562" />
 
 

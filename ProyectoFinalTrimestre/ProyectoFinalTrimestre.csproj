@@ -121,10 +121,10 @@
     <Resource Include="Icons\Twin_Snakes_%28Codec_Screen%29.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Sounds\ded.wav">
+    <Content Include="Sounds\call.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Sounds\call.wav">
+    <Content Include="Sounds\dead.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Sounds\item2.wav">
