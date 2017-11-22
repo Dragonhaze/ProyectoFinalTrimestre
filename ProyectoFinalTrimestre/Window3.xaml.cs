@@ -34,7 +34,8 @@ namespace ProyectoFinalTrimestre
         public void buscarPersonaPorNombre(String nombre)
         {
             SoundPlayer My_JukeBox = new SoundPlayer(@"Sounds/nope.wav");
-            
+            SoundPlayer My_JukeBox2 = new SoundPlayer(@"Sounds/item.wav");
+
             if (nombre == "")
             {
                 try
@@ -58,6 +59,11 @@ namespace ProyectoFinalTrimestre
                     {
                         texto.Text += Personas.buscarPersonaPorIndex(i);
                         Personas.removePersona(Personas.GetPersonas()[i]);
+                        try
+                        {
+                            My_JukeBox2.Play();
+                        }
+                        catch (FileNotFoundException ex) {Console.WriteLine(ex);}
                     }
                 }
                 if(texto.Text == "")

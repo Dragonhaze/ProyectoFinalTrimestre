@@ -9,7 +9,7 @@
     <Grid Background="Black">
         <TextBox x:Name="textbox" HorizontalAlignment="Left" Height="21" Margin="86,37,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="122" FontFamily="Lucida Console" Background="Black" Foreground="White" BorderBrush="#FF6BAC6B"/>
         <Label Content="Introduce un nombre" HorizontalAlignment="Left" Margin="73,10,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Lucida Console"/>
-        <ScrollViewer HorizontalAlignment="Left" Height="153" Margin="0,116,0,0" VerticalAlignment="Top" Width="292" HorizontalScrollBarVisibility="Auto" Foreground="White">
+        <ScrollViewer HorizontalAlignment="Left" Height="153" Margin="10,116,0,0" VerticalAlignment="Top" Width="282" HorizontalScrollBarVisibility="Auto" Foreground="White">
             <TextBlock x:Name="texto" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="auto" Width="249" FontFamily="Lucida Console"/>
         </ScrollViewer>
         <Button Content="Button" HorizontalAlignment="Left" Margin="108,63,0,0" VerticalAlignment="Top" Width="75" Background="Black" Foreground="White" BorderBrush="#FF64A86A" Click="Button_Click"/>
