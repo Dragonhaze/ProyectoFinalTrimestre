@@ -71,7 +71,7 @@ namespace ProyectoFinalTrimestre
                     }
                     catch (FileNotFoundException ex)
                     {
-                        // Write error.
+                        
                         Console.WriteLine(ex);
                     }
                     MessageBox.Show("Ya hay una persona con el mismo DNI");

@@ -84,9 +84,6 @@ namespace ProyectoFinalTrimestre
 
                     }
 
-
-                    
-
                     break;
                 case 2:
                     SoundPlayer My_JukeBox3 = new SoundPlayer(@"Sounds/itemselect.wav");
@@ -127,7 +124,7 @@ namespace ProyectoFinalTrimestre
                     MessageBox.Show(Personas.buscarPersonadeMasAltura());
                     break;
                 case 5:
-                    SoundPlayer My_JukeBox6 = new SoundPlayer(@"Sounds/dead.wav");
+                    SoundPlayer My_JukeBox6 = new SoundPlayer(@"Sounds/item2.wav");
                     try
                     {
                         My_JukeBox6.Play();
@@ -136,20 +133,26 @@ namespace ProyectoFinalTrimestre
                     {
                         Console.WriteLine(ex);
                     }
+                    Window3 window3 = new Window3();
+
+                    window3.ShowDialog();
+                    break;
+                case 6:
+                    SoundPlayer My_JukeBox7 = new SoundPlayer(@"Sounds/dead.wav");
+                    try
+                    {
+                        My_JukeBox7.Play();
+                    }
+                    catch (FileNotFoundException ex)
+                    {
+                        Console.WriteLine(ex);
+                    }
                     Task.Delay(7500).Wait();
                     this.Close();
+                    
                     break;
 
             }
-            
-
-
-            /* for (int i = 0; i < personajes.GetPersonas().Count; i++)
-             {
-
-                 texto.Text += personajes.buscarPersona(i);
-
-             }*/
         }
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
@@ -244,6 +247,11 @@ namespace ProyectoFinalTrimestre
             return personas[i].ToString();
         }
 
+        public static void removePersona(Persona persona)
+        {
+            personas.Remove(persona);
+        }
+
         public static void addPersona(Persona persona)
         {
             if (persona != null)
@@ -326,7 +334,7 @@ namespace ProyectoFinalTrimestre
                     "DNI: " + dni + '\n' +
                     "Fecha Nacimiento: " + fechanac + '\n' +
                     "Peso: " + peso + '\n' +
-                    "Altura: " + altura + '\n';
+                    "Altura: " + altura + '\n' + '\n';
         }
     }
 }

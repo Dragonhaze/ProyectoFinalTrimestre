@@ -25,6 +25,7 @@
             <ComboBoxItem Content="Buscar Persona por DNI"/>
             <ComboBoxItem Content="Mostrar la Persona de menos peso"/>
             <ComboBoxItem Content="Mostrar la Persona más alta"/>
+            <ComboBoxItem Content="Consultar por nombre"/>
             <ComboBoxItem Content="Salir"/>
         </ComboBox>
         <Label Content="Choose an option Snake" HorizontalAlignment="Left" Margin="117,325,0,0" VerticalAlignment="Top" Width="254" Foreground="White" Height="28" FontFamily="Lucida Console" FontSize="18"/>
